@@ -836,17 +836,14 @@
     /* ─── Responsive ─────────────────────────────────────── */
     @media (max-width: 900px) {
       #hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-image-wrapper { padding: 16px 16px 16px 0; }
-      .hero-image-panel { height: 50vw; min-height: 300px; }
-      .hero-text { padding: 60px var(--gutter); }
+      .hero-image-wrapper { padding: 0 16px 32px 16px; }
+      .hero-image-panel { height: 70vw; min-height: 320px; border-radius: 12px; }
+      .hero-text { padding: 60px var(--gutter) 32px; }
       .about-inner { grid-template-columns: 1fr; gap: 48px; }
       .expertise-grid { grid-template-columns: 1fr 1fr; }
       .timeline-item { grid-template-columns: 1fr; gap: 12px; }
       .timeline-duration { font-size: 24px; }
       .contact-inner { grid-template-columns: 1fr; gap: 60px; }
-      .stats-inner { grid-template-columns: 1fr; }
-      .stat { border-right: none; border-bottom: 1px solid var(--rule); padding-left: 0; }
-      .stat:last-child { border-bottom: none; }
       .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
       .form-row { grid-template-columns: 1fr; }
     }
@@ -1076,15 +1073,15 @@
           Whether you're looking for a strategic design partner, exploring a consulting engagement, or just want to connect — I'd love to hear from you.
         </p>
         <div class="contact-links">
-          <a href="mailto:josh@joshdyson.com" class="contact-link">
+          <a href="/cdn-cgi/l/email-protection#93f9fce0fbd3f9fce0fbf7eae0fcfdbdf0fcfe" class="contact-link">
             <span class="contact-link-icon">✉</span>
-            josh@joshdyson.com
+            <span class="__cf_email__" data-cfemail="ea80859982aa808599828e93998584c4898587">[email&#160;protected]</span>
           </a>
           <a href="https://www.linkedin.com/in/josh-dyson-34983a13/" target="_blank" rel="noopener" class="contact-link">
             <span class="contact-link-icon">in</span>
             LinkedIn
           </a>
-          <a href="mailto:josh@joshdyson.com?subject=CV Request" class="contact-link">
+          <a href="/cdn-cgi/l/email-protection#9bf1f4e8f3dbf1f4e8f3ffe2e8f4f5b5f8f4f6a4e8eef9f1fef8efa6d8cdbbc9feeaeefee8ef" class="contact-link">
             <span class="contact-link-icon">↗</span>
             Request CV
           </a>
@@ -1127,14 +1124,14 @@
       <ul class="footer-links">
         <li><a href="https://www.linkedin.com/in/josh-dyson-34983a13/" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="https://www.instagram.com/joshdyson2012/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="mailto:josh@joshdyson.com">Email</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#1b717468735b717468737f6268747535787476">Email</a></li>
       </ul>
       <span class="footer-copy">© 2026 Josh Dyson · Melbourne</span>
     </div>
   </footer>
 
   <!-- ─── JS ────────────────────────────────────────────────── -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Nav scroll state
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
@@ -1209,5 +1206,13 @@
     function applyTheme(theme) {
       html.setAttribute('data-theme', theme);
       if (theme === 'dark') {
-        themeIcon.textContent  = '○';
-        theme
+        themeIcon.textContent = '○';
+        themeLabel.textContent = 'Light';
+      } else {
+        themeIcon.textContent = '☽';
+        themeLabel.textContent = 'Dark';
+      }
+    }
+  </script>
+</body>
+</html>
